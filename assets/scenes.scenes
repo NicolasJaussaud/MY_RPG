@@ -1,0 +1,437 @@
+scene
+{
+ID:0 -- MENU
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=0; type=1; display=1; opacity=255; despawn=0; //BACKGROUND
+btn: posx=150; posy=60; rect=0;0;275;30; offset=275; size_x=275; size_y=30; texture_id=1; func=72; state=0; display=1; type=2; //PLAY_BTN //FUNC = go_to_scene
+btn: posx=550; posy=60; rect=0;0;115;30; offset=115; size_x=115; size_y=30; texture_id=2; func=66; state=0; display=1; type=2; //LOAD_BTN //FUNC = exit
+btn: posx=1230; posy=60; rect=0;0;200;30; offset=200; size_x=200; size_y=30; texture_id=3; func=57; state=0; display=1; type=2; //HTP_BTN
+btn: posx=1630; posy=60; rect=0;0;125;30; offset=125; size_x=125; size_y=30; texture_id=4; func=0; state=0; display=1; type=2; //QUIT_BTN
+}
+
+scene
+{
+ID:1 -- GAME
+obj: posx=0; posy=0; rect=0;0;3840;4320; offset=0; size_max=0; texture_id=22; type=1; display=1; opacity=255; despawn=0; //BG
+obj: posx=0; posy=0; rect=0;0;3400;3400; offset=0; size_max=0; texture_id=32; type=9; display=1; opacity=150; despawn=0; //HALO
+obj: posx=700; posy=900; rect=0;0;31;70; offset=31; size_max=92; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=0; posy=0; rect=1080;0;1920;2140; offset=0; size_max=0; texture_id=50; type=13; display=1; opacity=35; despawn=0; //RAIN
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+//MINIMAP
+obj: posx=1486; posy=40; rect=0;0;404;236; offset=0; size_max=0; texture_id=48; type=8; display=1; opacity=80; despawn=0; //CONTOUR_MINIMAP
+obj: posx=1496; posy=50; rect=0;0;384;216; offset=0; size_max=0; texture_id=40; type=12; display=1; opacity=80; despawn=0; //MINIMAP
+obj: posx=0; posy=0; rect=0;0;16;16; offset=0; size_max=0; texture_id=42; type=11; display=1; opacity=80; despawn=0; //CURSOR_PLAYER
+//ENTER SHOP
+btn: posx=530; posy=2900; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=44; state=1; display=0; type=2; //ENTER_SHOP
+txt: str=Entrer; posx=550; posy=2900; size=40; font_id=1; color=black; type=8; display=0; //TP_SHOP
+//ENTER HOSPITAL
+btn: posx=250; posy=1600; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=50; state=1; display=0; type=2; //ENTER_SHOP
+txt: str=Entrer; posx=265; posy=1600; size=40; font_id=1; color=black; type=8; display=0; //TP_SHOP
+//CAR1
+btn: posx=2330; posy=2500; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=44; func=45; state=1; display=0; type=4; //CAR1
+//CAR2
+btn: posx=200; posy=4200; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=44; func=45; state=1; display=0; type=4; //CAR2
+//CAR3
+btn: posx=3100; posy=2900; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=44; func=45; state=1; display=0; type=4; //CAR2
+//CAR4
+btn: posx=1050; posy=3750; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=44; func=45; state=1; display=0; type=4; //CAR2
+//ENTER LABO
+btn: posx=360; posy=3600; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=31; func=52; state=1; display=0; type=2; //TP LABO
+txt: str=Entrer; posx=370; posy=3600; size=40; font_id=1; color=black; type=8; display=0; //TP LABO
+//ENTER DUNGEON 2
+btn: posx=3021; posy=1659; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=31; func=62; state=1; display=0; type=2; //TP LABO
+txt: str=Entrer; posx=3021; posy=1669; size=40; font_id=1; color=black; type=8; display=0; //TP LABO
+txt: str=; posx=10; posy=100; size=60; font_id=1; color=white; type=12; display=1; //TXT DISPLAY QUEST_1
+obj: posx=10; posy=300; rect=0;0;369;192; offset=0; size_max=0; texture_id=70; type=18; display=0; opacity=255; despawn=0; //YOU_IN_QUEST
+obj: posx=10; posy=300; rect=0;0;369;192; offset=0; size_max=0; texture_id=71; type=19; display=0; opacity=255; despawn=0; //YOU_IN_QUEST
+//QUEST_2
+btn: posx=756; posy=1598; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=44; func=71; state=1; display=0; type=5; //TP LABO
+btn: posx=3130; posy=3090; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=44; func=71; state=1; display=0; type=6; //TP LABO
+btn: posx=1611; posy=638; rect=0;0;303;105; offset=303; size_x=150; size_y=50; texture_id=44; func=71; state=1; display=0; type=7; //TP LABO
+}
+
+scene
+{
+ID:2 -- INVENTORY
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=17; type=2; display=1; opacity=255; despawn=0;//BG
+obj: posx=27; posy=21; rect=0;0;418;24; offset=0; size_max=0; texture_id=18; type=5; display=1; opacity=255; despawn=0;//XP_BAR
+txt: str=Level 1; posx=930; posy=340; size=30; font_id=1; color=white; type=0; display=1; //LEVEL
+txt: str=10/200; posx=50; posy=15; size=30; font_id=1; color=white; type=1; display=1; //CARAC_TXT
+txt: str=Caracteristics; posx=1535; posy=335; size=30; font_id=1; color=white; type=1; display=1; //TITLE
+txt: str=Agility; posx=1540; posy=450; size=20; font_id=1; color=white; type=1; display=1; //CARAC_TXT
+txt: str=Precision; posx=1540; posy=500; size=20; font_id=1; color=white; type=1; display=1; //CARAC_TXT
+txt: str=Thirst; posx=1540; posy=550; size=20; font_id=1; color=white; type=1; display=1; //CARAC_TXT
+txt: str=Hunger; posx=1540; posy=600; size=20; font_id=1; color=white; type=1; display=1; //CARAC_TXT
+txt: str=To share; posx=1540; posy=800; size=20; font_id=1; color=white; type=1; display=1; //CARAC_TXT
+txt: str=10; posx=1700; posy=450; size=20; font_id=1; color=white; type=2; display=1; //AGILITY
+txt: str=10; posx=1700; posy=500; size=20; font_id=1; color=white; type=3; display=1; //PRECISION
+txt: str=10; posx=1700; posy=550; size=20; font_id=1; color=white; type=4; display=1; //HEALTH
+txt: str=10; posx=1700; posy=600; size=20; font_id=1; color=white; type=5; display=1; //HUNGER
+txt: str=10; posx=1700; posy=800; size=20; font_id=1; color=white; type=6; display=1; //TO_SHARE
+btn: posx=1730; posy=450; rect=0;0;20;20; offset=20; size_x=20; size_y=20; texture_id=19; func=2; state=1; display=1; type=0; //PLUS_AGILITY - ADD CARAC
+btn: posx=1730; posy=500; rect=0;0;20;20; offset=20; size_x=20; size_y=20; texture_id=19; func=3; state=1; display=1; type=0; //PLUS_PRECISION - ADD CARAC
+btn: posx=1730; posy=550; rect=0;0;20;20; offset=20; size_x=20; size_y=20; texture_id=19; func=4; state=1; display=1; type=0; //PLUS_HEALTH - ADD CARAC
+btn: posx=1730; posy=600; rect=0;0;20;20; offset=20; size_x=20; size_y=20; texture_id=19; func=5; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=362; posy=897; rect=0;0;112;27; offset=0; size_x=112; size_y=27; texture_id=23; func=6; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=420; posy=470; rect=0;0;280;50; offset=0; size_x=280; size_y=50; texture_id=24; func=7; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 1
+btn: posx=420; posy=525; rect=0;0;280;50; offset=0; size_x=280; size_y=50; texture_id=24; func=8; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 2
+btn: posx=420; posy=580; rect=0;0;280;50; offset=0; size_x=280; size_y=50; texture_id=24; func=9; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 3
+btn: posx=420; posy=635; rect=0;0;280;50; offset=0; size_x=280; size_y=50; texture_id=24; func=10; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 4
+btn: posx=420; posy=690; rect=0;0;280;50; offset=0; size_x=280; size_y=50; texture_id=24; func=11; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 5
+btn: posx=420; posy=745; rect=0;0;280;50; offset=0; size_x=280; size_y=50; texture_id=24; func=12; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 6
+btn: posx=420; posy=800; rect=0;0;280;50; offset=0; size_x=280; size_y=50; texture_id=24; func=13; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 7
+btn: posx=765; posy=450; rect=0;0;295;63; offset=0; size_x=295; size_y=63; texture_id=25; func=14; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 1
+btn: posx=765; posy=529; rect=0;0;295;63; offset=0; size_x=295; size_y=63; texture_id=25; func=15; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 2
+btn: posx=765; posy=603; rect=0;0;295;63; offset=0; size_x=295; size_y=63; texture_id=25; func=16; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 3
+btn: posx=765; posy=676; rect=0;0;295;63; offset=0; size_x=295; size_y=63; texture_id=25; func=17; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 4
+btn: posx=765; posy=748; rect=0;0;295;63; offset=0; size_x=295; size_y=63; texture_id=25; func=18; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON 5
+btn: posx=1130; posy=580; rect=0;0;295;63; offset=0; size_x=295; size_y=63; texture_id=25; func=19; state=1; display=1; type=1; //PLUS_HUNGER - ADD CARAC BUTTON SELECT
+}
+
+scene
+{
+ID:3 -- PROF_DIALOGUE
+obj: posx=300; posy=600; rect=0;0;1440;300; offset=0; size_max=0; texture_id=34; type=1; display=1; opacity=10; despawn=0;//FOND
+txt: str=Wesh; posx=330; posy=620; size=40; font_id=2; color=white; type=9; display=1; //DIALOGUE
+btn: posx=1600; posy=910; rect=0;0;304;105; offset=304; size_x=250; size_y=80; texture_id=31; func=52; state=1; display=1; type=2 ;//NEXT_SCENE
+txt: str=Exit; posx=1670; posy=920; size=50; font_id=1; color=white; type=9; display=1; //NEXT_SCENE_TXT
+}
+
+scene
+{
+ID:4 -- BOISSONS
+obj: posx=175; posy=79; rect=0;0;344;403; offset=0; size_max=0; texture_id=35; type=1; display=1; opacity=100; despawn=0;//FOND
+btn: posx=175; posy=487; rect=0;0;112;27; offset=0; size_x=112; size_y=27; texture_id=38; func=22; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=305; posy=487; rect=0;0;112;27; offset=0; size_x=112; size_y=27; texture_id=72; func=23; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=177; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=24; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=227; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=25; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=277; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=26; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+obj: posx=145; posy=17; rect=0;0;140;31; offset=0; size_max=0; texture_id=69; type=1; display=1; opacity=255; despawn=0; //HIDE MONEY
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //MONEY
+}
+
+scene
+{
+ID:5 -- NOURRITURES
+obj: posx=175; posy=79; rect=0;0;344;402; offset=0; size_max=0; texture_id=36; type=1; display=1; opacity=255; despawn=0;//FOND
+btn: posx=175; posy=487; rect=0;0;112;27; offset=0; size_x=112; size_y=27; texture_id=38; func=27; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=302; posy=487; rect=0;0;112;27; offset=0; size_x=112; size_y=27; texture_id=72; func=23; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=177; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=28; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=227; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=29; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=277; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=30; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=327; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=31; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+obj: posx=145; posy=17; rect=0;0;140;31; offset=0; size_max=0; texture_id=69; type=1; display=1; opacity=255; despawn=0; //HIDE MONEY
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+}
+
+scene
+{
+ID:6 -- ARMES
+obj: posx=175; posy=79; rect=0;0;345;553; offset=0; size_max=0; texture_id=37; type=1; display=1; opacity=255; despawn=0;//FOND
+btn: posx=175; posy=640; rect=0;0;112;27; offset=0; size_x=112; size_y=27; texture_id=38; func=32; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=300; posy=640; rect=0;0;112;27; offset=0; size_x=112; size_y=27; texture_id=72; func=23; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=170; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=33; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=212; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=34; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=250; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=35; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=292; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=36; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=332; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=37; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=372; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=38; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=412; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=39; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=452; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=40; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=492; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=41; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=532; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=42; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+btn: posx=180; posy=572; rect=0;0;250;27; offset=0; size_x=250; size_y=27; texture_id=39; func=43; state=1; display=1; type=0; //PLUS_HUNGER - ADD CARAC
+obj: posx=145; posy=17; rect=0;0;140;31; offset=0; size_max=0; texture_id=69; type=1; display=1; opacity=255; despawn=0; //HIDE MONEY
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+}
+
+scene
+{
+ID:7 -- MINIMAP
+obj: posx=576; posy=324; rect=200;200;768;432; offset=0; size_max=0; texture_id=40; type=1; display=1; opacity=255; despawn=0; //MAP
+obj: posx=0; posy=0; rect=0;0;19;30; offset=0; size_max=0; texture_id=41; type=11; display=1; opacity=255; despawn=0; //CURSOR_PLAYER
+}
+
+scenes
+{
+ID:8 -- SHOP
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=43; type=1; display=1; opacity=255; despawn=0;//FOND
+obj: posx=1100; posy=180; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+btn: posx=1050; posy=130; rect=0;0;304;105; offset=304; size_x=100; size_y=50; texture_id=31; func=1; state=1; display=0; type=2; //EXIT
+txt: str=Exit; posx=1060; posy=130; size=40; font_id=1; color=black; type=8; display=0; //EXIT
+btn: posx=400; posy=330; rect=0;0;304;105; offset=304; size_x=150; size_y=60; texture_id=45; func=46; state=1; display=0; type=2;
+btn: posx=100; posy=600; rect=0;0;304;105; offset=304; size_x=150; size_y=60; texture_id=45; func=46; state=1; display=0; type=2;
+btn: posx=1220; posy=100; rect=0;0;304;105; offset=304; size_x=150; size_y=60; texture_id=46; func=47; state=1; display=0; type=2;
+btn: posx=1550; posy=300; rect=0;0;304;105; offset=304; size_x=150; size_y=60; texture_id=46; func=47; state=1; display=0; type=2;
+btn: posx=1100; posy=430; rect=0;0;304;105; offset=304; size_x=150; size_y=60; texture_id=47; func=48; state=1; display=0; type=2;
+btn: posx=330; posy=750; rect=0;0;304;105; offset=304; size_x=150; size_y=60; texture_id=47; func=48; state=1; display=0; type=2;
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+}
+
+scenes
+{
+ID:9 -- CAR
+obj: posx=300; posy=600; rect=0;0;1440;300; offset=0; size_max=0; texture_id=34; type=1; display=1; opacity=10; despawn=0;//FOND
+txt: str=En fouillant la voiture vous trouvez; posx=330; posy=650; size=50; font_id=1; color=white; type=9; display=1;
+txt: str=- 10; posx=360; posy=700; size=50; font_id=1; color=white; type=10; display=1;
+txt: str=- 10; posx=360; posy=750; size=50; font_id=1; color=white; type=11; display=1;
+btn: posx=1600; posy=910; rect=0;0;304;105; offset=304; size_x=250; size_y=80; texture_id=31; func=1; state=1; display=1; type=2 ;//NEXT_SCENE
+txt: str=Exit; posx=1670; posy=920; size=50; font_id=1; color=white; type=9; display=1; //NEXT_SCENE_TXT
+obj: posx=460; posy=703; rect=0;0;55;50; offset=0; size_max=0; texture_id=51; type=1; display=1; opacity=255; despawn=0; //COIN
+obj: posx=460; posy=753; rect=0;0;50;50; offset=0; size_max=0; texture_id=51; type=14; display=1; opacity=255; despawn=0; //COIN
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+}
+
+scenes
+{
+ID:10 -- HOSPITAL
+obj: posx=-240; posy=-160; rect=0;0;2400;1400; offset=0; size_max=0; texture_id=49; type=1; display=1; opacity=255; despawn=0; //FOND
+obj: posx=930; posy=80; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+btn: posx=920; posy=50; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=1; state=1; display=1; type=2: //SORTIR
+txt: str=Sortir; posx=930; posy=50; size=40; font_id=1; color=black; type=8; display=1; //TEST
+btn: posx=500; posy=50; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=54; state=1; display=1; type=2; //MONTER
+txt: str=Monter; posx=510; posy=50; size=40; font_id=1; color=black; type=8; display=1; //TEST
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=62; type=16; display=0; opacity=200; despawn=0; //KILL ALL ZOMBIES
+}
+
+scenes
+{
+ID:11 -- DEATH
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0, size_max=0; texture_id=53; type=1; display=1; opacity=10; despawn=0; //FOND
+btn: posx=1574; posy=1025; rect=0;0;304;105; offset=304; size_x=130; size_y=27; texture_id=31; func=52; state=1; display=1; type=2; //GO_TO_LABO
+txt: str=Respawn; posx=1588; posy=1025; size=23; font_id=1; color=white; type=1; display=1; //RESPAWN TXT
+btn: posx=1744; posy=1025; rect=0;0;304;105; offset=304; size_x=151; size_y=27; texture_id=31; func=53; state=1; display=1; type=2; //RAGE QUIT
+txt: str=Rage Quit; posx=1764; posy=1025; size=23; font_id=1; color=white; type=1; display=1; //RAGE QUIT TXT
+}
+
+scenes
+{
+ID:12 -- LABORATOIRE
+obj: posx=-240; posy=-160; rect=0;0;2400;1400; offset=0; size_max=0; texture_id=52; type=1; display=1; opacity=255; despawn=0; //LABO
+obj: posx=1292; posy=182; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+btn: posx=1260; posy=120; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=1; state=1; display=1; type=2; //Sortir
+txt: str=Sortir; posx=1270; posy=120; size=40; font_id=1; color=black; type=8; display=1; //SORTIR
+//DIALOGUE VIEUX
+btn: posx=850; posy=500; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=21; state=1; display=0; type=2; //TP_DIALOGUE_PROF
+txt: str=Parler; posx=865; posy=500; size=40; font_id=1; color=black; type=8; display=0; //TP_DIALOGUE_PROF
+}
+
+scenes
+{
+ID:13 -- HOSPITAL2
+obj: posx=-240; posy=-160; rect=0;0;2400;1400; offset=0; size_max=0; texture_id=55; type=1; display=1; opacity=255; despawn=0; //HOSPITAL2
+obj: posx=530; posy=80; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+btn: posx=500; posy=50; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=55; state=1; display=1; type=2; //MONTER
+txt: str=Monter; posx=510; posy=50; size=40; font_id=1; color=black; type=8; display=1; //TEST
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=62; type=16; display=0; opacity=200; despawn=0; //KILL ALL ZOMBIES
+}
+
+scenes
+{
+ID:14 -- HOSPITAL3
+obj: posx=-240; posy=-160; rect=0;0;2400;1400; offset=0; size_max=0; texture_id=56; type=1; display=1; opacity=255; despawn=0; //HOSPITAL3
+obj: posx=530; posy=100; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+btn: posx=500; posy=50; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=1; state=1; display=1; type=2; //Sortir
+txt: str=Sortir; posx=510; posy=50; size=40; font_id=1; color=black; type=8; display=1; //SORTIR
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=62; type=16; display=0; opacity=200; despawn=0; //KILL ALL ZOMBIES
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=68; type=17; display=0; opacity=200; despawn=0; //KILL ALL ZOMBIES
+btn: posx=1048; posy=92; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=44; func=61; state=1; display=1; type=4; //FOUILLER RECUP OBJ
+}
+
+scenes
+{
+ID:15 -- HTPPOPUP
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=58; type=1; display=1; opacity=255; despawn=0; //BACKGROUND
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=57; type=1; display=1; opacity=255; despawn=0; //BACKGROUND
+btn: posx=1400; posy=330; rect=0;0;18;18; offset=18; size_x=18; size_y=18; texture_id=59; func=56; state=0; display=1; type=2; //FERMER //FUNC = go_to_htp
+}
+
+scenes
+{
+ID:16 -- HTP
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=58; type=1; display=1; opacity=255; despawn=0; //BACKGROUND
+btn: posx=1660; posy=1020; rect=0;0;110;20; offset=110; size_x=110; size_y=20; texture_id=61; func=73; state=0; display=1; type=2; //HTP_SUIVANT
+btn: posx=1800; posy=1020; rect=0;0;110;20; offset=110; size_x=110; size_y=20; texture_id=60; func=58; state=0; display=1; type=2; //HTP_QUITTER
+}
+
+scenes
+{
+ID:17 -- PAUSE
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=63; type=1; display=1; opacity=255; despawn=0; //BACKGROUND
+btn: posx=883; posy=432; rect=0;0;160;25; offset=160; size_x=160; size_y=25; texture_id=64; func=60; state=O; display=1; type=2; //PAUSE_CONTINUER
+btn: posx=906; posy=523; rect=0;0;110;25; offset=110; size_x=110; size_y=25; texture_id=66; func=66; state=O; display=1; type=2; //PAUSE_OPTION
+btn: posx=860; posy=622; rect=0;0;200;25; offset=200; size_x=200; size_y=25; texture_id=65; func=59; state=O; display=1; type=2; //PAUSE_HTP
+btn: posx=900; posy=720; rect=0;0;115;25; offset=115; size_x=115; size_y=25; texture_id=67; func=0; state=O; display=1; type=2; //PAUSE_QUITTER
+}
+
+
+scenes
+{
+ID:18 -- PHARMACIE 1
+obj: posx=-240; posy=-160; rect=0;0;2400;1400; offset=0; size_max=0; texture_id=81; type=1; display=1; opacity=255; despawn=0; //HOSPITAL3
+obj: posx=1292; posy=182; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+btn: posx=0; posy=0; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=63; state=1; display=1; type=2; //MONTER
+txt: str=Monter; posx=10; posy=0; size=40; font_id=1; color=black; type=8; display=1; //MONTER
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=62; type=16; display=0; opacity=200; despawn=0; //KILL ALL ZOMBIES
+}
+
+scenes
+{
+ID:19 -- PHARMACIE 2
+obj: posx=-240; posy=-160; rect=0;0;2400;1400; offset=0; size_max=0; texture_id=82; type=1; display=1; opacity=255; despawn=0; //HOSPITAL3
+obj: posx=1292; posy=182; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+btn: posx=0; posy=0; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=64; state=1; display=1; type=2; //MONTER
+txt: str=Monter; posx=10; posy=0; size=40; font_id=1; color=black; type=8; display=1; //MONTER
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=62; type=16; display=0; opacity=200; despawn=0; //KILL ALL ZOMBIES
+}
+
+scenes
+{
+ID:20 -- PHARMACIE 3
+obj: posx=-240; posy=-160; rect=0;0;2400;1400; offset=0; size_max=0; texture_id=83; type=1; display=1; opacity=255; despawn=0; //HOSPITAL3
+obj: posx=1292; posy=182; rect=0;0;31;70; offset=31; size_max=62; texture_id=7; type=0; display=1; opacity=255; despawn=0; //PLAYER
+obj: posx=30; posy=20; rect=0;0;100;10; offset=0; size_max=0; texture_id=26; type=4; display=1; opacity=255; despawn=0; //BAR_LIFE_HUD
+obj: posx=30; posy=40; rect=0;0;100;10; offset=0; size_max=0; texture_id=27; type=5; display=1; opacity=255; despawn=0; //BAR_XP_HUD
+obj: posx=30; posy=60; rect=0;0;100;10; offset=0; size_max=0; texture_id=28; type=6; display=1; opacity=255; despawn=0; //BAR_FAIM_HUD
+obj: posx=30; posy=80; rect=0;0;100;10; offset=0; size_max=0; texture_id=29; type=7; display=1; opacity=255; despawn=0; //BAR_SOIF_HUD
+obj: posx=28; posy=18; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=38; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=58; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+obj: posx=28; posy=78; rect=0;0;104;14; offset=0; size_max=0; texture_id=30; type=8; display=1; opacity=255; despawn=0; //CONTOUR
+txt: str=HP; posx=30; posy=17; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=XP; posx=30; posy=37; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=HUNGER; posx=30; posy=58; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=THIRST; posx=30; posy=78; size=12; font_id=1; color=white; type=1; display=1; //TEST
+txt: str=30; posx=150; posy=20; size=30; font_id=1; color=white; type=7; display=1; //TEST
+btn: posx=0; posy=0; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=31; func=1; state=1; display=1; type=2; //SORTIR
+txt: str=Sortir; posx=10; posy=0; size=40; font_id=1; color=black; type=8; display=1; //SORTIR
+btn: posx=400; posy=0; rect=0;0;304;105; offset=304; size_x=150; size_y=50; texture_id=44; func=65; state=1; display=1; type=4; //FOUILLER RECUP OBJ
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=62; type=16; display=0; opacity=200; despawn=0; //KILL ALL ZOMBIES
+obj: posx=1500; posy=100; rect=0;0;369;192; offset=0; size_max=0; texture_id=68; type=17; display=0; opacity=200; despawn=0; //RECUP OBJ
+}
+
+scenes
+{
+ID:21 -- OPTIONS
+obj: posx=531; posy=360; rect=0;0;935;306; offset=0; size_max=0; texture_id=73; type=1; display=1; opacity=200; despawn=0; //BG_SETTINGS
+obj: posx=1037; posy=481; rect=0;0;204;20; offset=0; size_max=0; texture_id=74; type=20; display=1; opacity=200; despawn=0; //SOUND1
+btn: posx=1422; posy=365; rect=0;0;18;18; offset=18; size_x=18; size_y=18; texture_id=59; func=70; state=0; display=1; type=2; //FERMER //FUNC = go_to_menu
+btn: posx=1005; posy=480; rect=0;0;26;21; offset=0; size_x=26; size_y=21; texture_id=76; func=68; state=1; display=1; type=2;
+btn: posx=1246; posy=480; rect=0;0;26;21; offset=0; size_x=26; size_y=21; texture_id=75; func=67; state=1; display=1; type=2;
+}
+
+scenes
+{
+ID:22 -- FIND_ITEM
+obj: posx=300; posy=600; rect=0;0;1440;300; offset=0; size_max=0; texture_id=77; type=1; display=1; opacity=255; despawn=0; //TEXT
+btn: posx=1600; posy=910; rect=0;0;304;105; offset=304; size_x=250; size_y=80; texture_id=31; func=69; state=1; display=1; type=2 ;//NEXT_SCENE
+txt: str=Exit; posx=1670; posy=920; size=50; font_id=1; color=white; type=9; display=1; //NEXT_SCENE_TXT
+}
+
+scenes
+{
+ID:23 -- HTP2
+obj: posx=0; posy=0; rect=0;0;1920;1080; offset=0; size_max=0; texture_id=79; type=1; display=1; opacity=255; despawn=0; //BACKGROUND
+btn: posx=1800; posy=1020; rect=0;0;110;20; offset=110; size_x=110; size_y=20; texture_id=60; func=58; state=0; display=1; type=2; //HTP_QUITTER
+}
