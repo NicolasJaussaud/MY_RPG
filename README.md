@@ -24,6 +24,9 @@ Et bien d'autres fonctionnalités.
 # EXECUTION
 ./my_rpg_2017
 
+# TRAILER
+https://www.youtube.com/watch?v=iDZEePX8hn4&feature=youtu.be
+
 # CREDIT
 Romain Chabrolin
 Robin CHailley
